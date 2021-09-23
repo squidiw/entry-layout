@@ -222,6 +222,10 @@ nav .menu-links a:first-child, nav .misc a:first-child {
   padding: 0.4em;
 }
 
+.checkout-page .cart__body .quantity .number {
+  text-align: center;
+}
+
 .checkout-page .cart__body .image {
   width: 100px;
   padding: 0.4em;
@@ -229,4 +233,124 @@ nav .menu-links a:first-child, nav .misc a:first-child {
 
 .checkout-page .cart__body .image img {
   width: 100%;
+}
+
+.cart-dropdown {
+  position: absolute;
+  width: 310px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  top: 60px;
+  right: 10px;
+  z-index: 5;
+}
+
+.cart-dropdown .empty-message {
+  font-size: 18px;
+  margin: 50px auto;
+}
+
+.cart-dropdown .title {
+  position: relative;
+}
+
+.cart-dropdown .title .heading {
+  position: absolute;
+  top: -20px;
+}
+
+.cart-dropdown .title .heading .bold {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.cart-dropdown .cart {
+  overflow-y: scroll;
+}
+
+.cart-dropdown .cart__title {
+  text-transform: uppercase;
+}
+
+.cart-dropdown .cart__body {
+  display: flex;
+  padding: 1em 0;
+}
+
+.cart-dropdown .cart__body .details {
+  margin-right: auto;
+}
+
+.cart-dropdown .cart__body .details .name {
+  padding: 0.2em 0;
+  font-size: 1.2rem;
+}
+
+.cart-dropdown .cart__body .details .brand {
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+.cart-dropdown .cart__body .details .price {
+  padding: 0.6em 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.cart-dropdown .cart__body .details .size {
+  display: flex;
+  padding-top: 10px;
+}
+
+.cart-dropdown .cart__body .details .size__type:first-child {
+  margin-right: 1em;
+}
+
+.cart-dropdown .cart__body .box {
+  border: 1px solid black;
+  padding: 0.4em;
+}
+
+.cart-dropdown .cart__body .quantity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.4em;
+}
+
+.cart-dropdown .cart__body .quantity .number {
+  text-align: center;
+}
+
+.cart-dropdown .cart__body .image {
+  width: 100px;
+  padding: 0.4em;
+}
+
+.cart-dropdown .cart__body .image img {
+  width: 100%;
+}
+
+.cart-dropdown .total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-top: 1.5em;
+}
+
+.cart-dropdown .buttons {
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-dropdown .buttons button {
+  padding: 1em;
+  width: 45%;
+  text-transform: uppercase;
 }
