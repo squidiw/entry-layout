@@ -76,82 +76,91 @@ nav .menu-links a:first-child, nav .misc a:first-child {
 }
 
 .product-page {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
-  flex-grow: 0;
   justify-content: space-evenly;
-  margin-top: 4em;
+  width: 1070px;
+  margin-top: 3.5em;
 }
 
 .product-page__gallery {
-  min-height: 100vh;
-}
-
-.product-page__gallery .gallery-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 70vh;
+  justify-content: space-around;
+  width: 170px;
+  height: 300px;
 }
 
-.product-page__gallery .gallery-box img {
-  max-width: 90px;
-  max-height: 100%;
-}
-
-.product-page__large-image {
-  height: 500px;
+.product-page__gallery img {
   width: 100%;
-  background-color: #5ECE7B;
-  flex-basis: 30%;
 }
 
-.product-page__large-image img {
-  max-width: 100%;
-  max-height: 100%;
+.product-page__main-image {
+  width: 900px;
 }
 
-.product-page .product-body {
-  flex-basis: 30%;
-  justify-content: space-evenly;
+.product-page__main-image img {
+  width: 100%;
 }
 
-.product-page .product-body__size h4 {
-  padding-top: 0.5em;
+.product-page__details {
+  margin-left: 3em;
+  width: 70%;
+}
+
+.product-page__details .brand {
+  padding-bottom: 0.8em;
+  font-weight: light;
+  font-size: 1.3rem;
+}
+
+.product-page__details .size {
+  padding-bottom: 0.8em;
+  cursor: pointer;
+}
+
+.product-page__details .size p {
   padding-bottom: 0.5em;
 }
 
-.product-page .product-body__size .size-option__box {
+.product-page__details .size__options {
   display: flex;
-  justify-content: space-evenly;
-  width: 45%;
+  justify-content: space-between;
+  width: 50%;
 }
 
-.product-page .product-body__size .size-option__box .size-box {
-  border: 1px solid;
-  padding: 0.9em;
-  margin: 0.1em;
+.product-page__details .size__options .box {
+  border: 1px solid black;
+  padding: 0.8em;
+  text-transform: uppercase;
 }
 
-.product-page .product-body__price h4 {
-  padding-top: 0.5em;
+.product-page__details .price {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 0.6em;
+  padding-bottom: 0.8em;
+}
+
+.product-page__details .price p {
   padding-bottom: 0.5em;
 }
 
-.product-page .product-body__button {
-  padding-top: 1em;
+.product-page__details .add-to-cart {
+  padding: 0.6em 0;
 }
 
-.product-page .product-body__button button {
-  padding: 0.8em;
-  width: 50%;
-  text-transform: uppercase;
+.product-page__details .add-to-cart button {
+  padding: 1em;
+  width: 60%;
   background-color: #5ece7b;
-  color: #fff;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
 }
 
-.product-page .product-body__desc {
-  padding-top: 1em;
+.product-page__details .description {
+  width: 70%;
 }
 
 .checkout-page {
