@@ -55,7 +55,7 @@ nav .menu-links a:first-child, nav .misc a:first-child {
 
 .card:hover .add-to-cart .fa-shopping-cart {
   color: white;
-  background-color: green;
+  background-color: #5ece7b;
   border-radius: 50%;
   padding: 1em;
 }
