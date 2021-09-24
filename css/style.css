@@ -16,6 +16,23 @@ nav {
   padding-top: 1em;
 }
 
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em;
+  position: relative;
+}
+
+nav .active::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  height: 15px;
+  width: 80%;
+  border-bottom: 2px solid #000;
+}
+
 nav .menu-links a:first-child, nav .misc a:first-child {
   padding-right: 2em;
 }
